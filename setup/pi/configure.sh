@@ -114,6 +114,7 @@ function check_archive_configs () {
             check_variable "archiveserver"
             ;;
         wifi)
+            export archiveserver=""
             ;;
         none)
             ;;
