@@ -1,2 +1,2 @@
 #!/bin/bash -eu
-# Nothing to do.
+mount /mnt/cam/

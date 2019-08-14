@@ -113,6 +113,8 @@ function check_archive_configs () {
             check_variable "sharepassword"
             check_variable "archiveserver"
             ;;
+        wifi)
+            ;;
         none)
             ;;
         *)
@@ -135,6 +137,9 @@ function get_archive_module () {
             ;;
         cifs)
             echo "run/cifs_archive"
+            ;;
+        wifi)
+            echo "run/wifi_archive"
             ;;
         *)
             echo "Internal error: Attempting to configure unrecognized archive system: $ARCHIVE_SYSTEM"
