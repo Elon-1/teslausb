@@ -7,9 +7,11 @@ function connectionmonitor {
   do
     if timeout 5 /root/bin/archive-is-reachable.sh
     then
+      log "Sleep for 2"
       sleep 2
     elif timeout 5 /root/bin/archive-is-reachable.sh # try one more time
     then
+      log "Sleep for 2"
       sleep 2
     else
       log "connection dead, killing archive-clips"
