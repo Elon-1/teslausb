@@ -10,4 +10,5 @@ then
 	return
 fi
 log "No wifi clients."
+log "$ap_connections"
 exit 0
