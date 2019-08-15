@@ -5,6 +5,7 @@ log "Setting up hotspot..."
 function connectionmonitor {
   while true
   do
+    log "in connectionmonitor"
     if timeout 5 /root/bin/archive-is-reachable.sh
     then
       log "Sleep for 2"

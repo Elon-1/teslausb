@@ -6,9 +6,9 @@ if [ "$ap_connections" > 1 ]
 then
 	log "At least one wifi client."
 	log "$ap_connections"
-	exit 1
+	exit 0
 	return
 fi
 log "No wifi clients."
 log "$ap_connections"
-exit 0
+exit 1
