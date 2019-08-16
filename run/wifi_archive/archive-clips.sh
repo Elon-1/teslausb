@@ -24,6 +24,9 @@ function connectionmonitor {
   done
 }
 
+log "Mounting /mnt/cam/"
+mount /mnt/cam/
+
 connectionmonitor $$ &
 
 kill %1

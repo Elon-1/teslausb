@@ -1,8 +1,8 @@
 #!/bin/bash -eu
 
-ap_connections=$(hostapd_cli all_sta | wc -l)
+ap_connections=$(hostapd_cli all_sta | grep dot11RSNAStatsSTAAddress | wc -l)
 
-if [ "$ap_connections" > 1 ]
+if [ $ap_connections -ge 1 ]
 then
 	log "At least one wifi client."
 	log "$ap_connections"

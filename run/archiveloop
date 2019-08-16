@@ -405,7 +405,7 @@ if archive_is_reachable
 then
   fastblink
 
-  set_time
+  #set_time
 
   # archive_clips will fix errors in the cam file
   mount_and_fix_errors_in_music_file
@@ -431,7 +431,7 @@ do
 
   fastblink
 
-  set_time
+  #set_time
 
   sleep ${ARCHIVE_DELAY:-20}
 
