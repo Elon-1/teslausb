@@ -433,7 +433,7 @@ do
 
   #set_time
 
-  sleep ${ARCHIVE_DELAY:-20}
+  #sleep ${ARCHIVE_DELAY:-20}
 
   archive_clips
 
