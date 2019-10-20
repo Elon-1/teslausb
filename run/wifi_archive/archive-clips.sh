@@ -25,7 +25,7 @@ function connectionmonitor {
 
 connectionmonitor $$ &
 
-sleep 3600
+sleep 360
 
 kill %1
 
